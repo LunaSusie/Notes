@@ -4,7 +4,6 @@ tags: JavaScript,正则表达式
 grammar_cjkRuby: true
 ---
 
-
 replace使用：
 基础：'a','A'
 
