@@ -119,3 +119,137 @@ tostring
 Array.prototype.slice.call(伪数组);
 jq是伪数组实现，使用了大量JSON对象。
 Apply和call一样，就是call参数是平铺的，apply参数是一个数组。
+
+# 8、拷贝对象和扩展对象
+通常使用extend扩展第三方框架中的配置对象，构成自定义配置。
+# 9、BOM对象
+## window对象
+doucument对象
+frames对象
+history对象
+localtion对象
+navigator对象
+screen对象
+## windows属性
+parent----如果当前为framens，指向包含当前framens的framens
+self----当前窗口
+top---指向包含该framens的top-level的window对象。
+window---但前window
+opener---打开窗口者
+## 打开新窗口和控制窗口和滚动
+open()
+close()
+moveBy(x,y)
+moveTo(x,y)
+x,y以屏幕左上角为标准。
+resizeBy(w,h)
+resizeTo(w,h)
+
+scrollTo(x,y)
+scrollBy(x,y)
+## 对话框方法
+alert()
+comfirm()
+prompt()
+## 焦点
+ focus()
+ blur()
+## 时间间隔
+setTimeout()
+clearTimeout()
+setInterval()
+clearInterval()
+## 地址栏对象locationAPI
+hash
+host--------主机名和端口号
+hostname----主机名
+herf----------url
+pathname-----url路径部分
+port-------------端口
+protocol-----url中的协议
+seach------ur中的参数
+
+## 历史对象historyAPI
+length---历史数量
+go(-1)
+.back()
+.forward()
+## navigatorAPI
+appCodeName
+appName
+appVersion
+userAgent
+platform----win32,win16,wince,mac68k,mappc,hp-ux,sunos
+cpuClass
+online
+cookieEnabled
+## 浏览器特征
+ie：mozilla/x.0，包含mesie x.0
+firefox：mozilla/x.0，包含windows nt和firefox/
+chrome：mozilla/x.0，包含windows nt和chrome/
+opera:opera/，包含windows nt和presto
+## eval()方法
+## parseInt()	parsefloat()
+# 10、DOM对象
+DOM树
+节点：
+parentNode--父节点
+childNode--子节点
+firstChild----第一个子节点
+lastChild----最后一个子节点
+nextSibling----下一个兄弟节点
+previoursSibling---上一个兄弟节点
+元素节点：
+firstElementchild---第一个子元素
+lastElementChild---最后一个子元素
+nextElementSibling---下一个兄弟元素
+previousElementSibling---上一个兄弟元素
+childElementCount---子元素节点数
+# 11、jquery
+## jq选择器
+element
+#id
+.class
+## jq层级选择器
+partent>child
+prev + next
+prev ~ siblings
+## jq基本过滤器查询
+## jq内容过滤器
+:contains(text)
+:empty
+:hsa(selecter)
+## jq可见过滤器
+:hidden
+:visible
+## jq元素属性--attr
+## jq元素内容--html()
+## jq元素值--val()
+## jq样式css--css()
+## jq其他
+hasClass
+addClass
+removeClass
+height
+width
+offset
+position
+
+# 13、框架，污染 
+  ## 框架通常包含
+  1、事件
+  绑定事件，接触绑定，点击事件，鼠标事件，键盘事件
+  2、选择框架 
+  id，class，tag，层次，多组，，层次+多组，html5...
+  3、CSS框架
+  属性 ，内容，宽，高，偏移，定位，添加class，移除class...
+  4、动画
+  单物体，多物体...
+  ## 污染的决解方式
+  1、函数
+  2、对象
+  3、命名空间---代码分类管理。
+  4、立即函数---暴露立即函数变量的方法。
+ 
+  ## 链式访问原理
+  重点：返回this；
