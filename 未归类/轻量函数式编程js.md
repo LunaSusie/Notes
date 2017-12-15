@@ -116,5 +116,4 @@ var stocks = {
 	"MSFT": { price: 65.78, change: 1.51 },
 	"GOOG": { price: 821.31, change: -8.84 },
 };
-
 ```
