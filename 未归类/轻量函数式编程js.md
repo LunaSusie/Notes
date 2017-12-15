@@ -110,3 +110,8 @@ grammar_cjkRuby: true
 * 完全看不懂了
 ## 实例
 ### 股票数据结构
+var stocks = {
+	"AAPL": { price: 121.95, change: 0.01 },
+	"MSFT": { price: 65.78, change: 1.51 },
+	"GOOG": { price: 821.31, change: -8.84 },
+};
