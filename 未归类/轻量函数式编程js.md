@@ -113,12 +113,5 @@ grammar_cjkRuby: true
 	* 尾调用是通过减少或释放堆栈帧来节约内存空间。
 ## 异步函数
 * 完全看不懂了
-## 实例
-### 股票数据结构
-```javascript?linenums
-var stocks = {
-	"AAPL": { price: 121.95, change: 0.01 },
-	"MSFT": { price: 65.78, change: 1.51 },
-	"GOOG": { price: 821.31, change: -8.84 },
-};
-```
+
+
