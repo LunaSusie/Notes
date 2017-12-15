@@ -48,3 +48,4 @@ grammar_cjkRuby: true
 * IIFE，立即执行函数中，最好给函数一个名称。
 * ES6箭头函数（lambada），lambada表达式相比函数，更简洁，用不用取决于你。
 ### 关于this
+* 别用this。
