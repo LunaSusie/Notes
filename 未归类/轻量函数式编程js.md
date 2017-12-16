@@ -1,5 +1,5 @@
 ---
-title: JavaScript 轻量级函数式编程 笔记
+title: JavaScript 轻量级函数式编程--笔记
 tags:javaScript,函数式
 grammar_cjkRuby: true
 ---
