@@ -18,4 +18,4 @@ grammar_cjkRuby: true
 * 定义函数，数组，散列表。
 * 代码块和yield。
 * 从文件运行ruby。
-* 定义类。
+* 定义类。一切类继承object。
