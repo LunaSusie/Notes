@@ -17,3 +17,4 @@ grammar_cjkRuby: true
 * true和false也是对象。
 * 块形式和单行形式。
 * ryby强类型语言。
+* 代码执行时候进行类型检查，叫动态类型。
