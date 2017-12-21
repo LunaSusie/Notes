@@ -11,8 +11,10 @@ grammar_cjkRuby: true
 ![enter description here][1]
 # 创建页面
 登陆界面参考的https://github.com/PanJiaChen/vue-element-admin这个开源项目，界面效果如下图
-![enter description here][2]
+
+![效果图][2]
 文件如下：只做一个登陆的界面。
+
 ![enter description here][3]
 这里顺便总结一下svg图标使用。
 首先重新配置easywebpack的loader，修改如下：
