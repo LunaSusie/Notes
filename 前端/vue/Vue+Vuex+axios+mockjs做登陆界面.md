@@ -15,8 +15,8 @@ grammar_cjkRuby: true
 文件如下：只做一个登陆的界面。
 ![enter description here][3]
 这里顺便总结一下svg图标使用。
-
-![在asset文件夹中创建一个icons文件夹][4]
+在asset文件夹中创建一个icons文件夹存放svg文件。
+![icons文件夹][4]
 
 ![创建一个svg组件][5]
 
