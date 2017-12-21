@@ -35,9 +35,16 @@ page文件夹是用来放页面文件的。如果是单页面应用，应该和�
 # 界面创建
 界面创建安装参考项目界面来就可以。
 
+
 ![入口，注意引用，下面的store就是在这里引入的][9]
 
 ![登陆的事件中，store分配了一个loginByUsername的action][10]
+
+![我把不必要的都注释掉了，主要看这个user][11]
+
+![loginByUsername，找到了loginByUsername这个action了，它里面使用了一个login方法][12]
+
+
 
 
   [1]: https://www.github.com/loveshullf/Notes/raw/img/%E5%B0%8F%E4%B9%A6%E5%8C%A0/Vue+Vuex+axios+mockjs%E5%81%9A%E7%99%BB%E9%99%86%E7%95%8C%E9%9D%A2-2017-12-21-1513863635837.jpg
@@ -50,3 +57,5 @@ page文件夹是用来放页面文件的。如果是单页面应用，应该和�
   [8]: https://www.github.com/loveshullf/Notes/raw/img/%E5%B0%8F%E4%B9%A6%E5%8C%A0/Vue+Vuex+axios+mockjs%E5%81%9A%E7%99%BB%E9%99%86%E7%95%8C%E9%9D%A2-2017-12-21-1513864264300.jpg
   [9]: https://www.github.com/loveshullf/Notes/raw/img/%E5%B0%8F%E4%B9%A6%E5%8C%A0/Vue+Vuex+axios+mockjs%E5%81%9A%E7%99%BB%E9%99%86%E7%95%8C%E9%9D%A2-2017-12-21-1513864843558.jpg
   [10]: https://www.github.com/loveshullf/Notes/raw/img/%E5%B0%8F%E4%B9%A6%E5%8C%A0/Vue+Vuex+axios+mockjs%E5%81%9A%E7%99%BB%E9%99%86%E7%95%8C%E9%9D%A2-2017-12-21-1513864740468.jpg
+  [11]: https://www.github.com/loveshullf/Notes/raw/img/%E5%B0%8F%E4%B9%A6%E5%8C%A0/Vue+Vuex+axios+mockjs%E5%81%9A%E7%99%BB%E9%99%86%E7%95%8C%E9%9D%A2-2017-12-21-1513865028680.jpg
+  [12]: https://www.github.com/loveshullf/Notes/raw/img/%E5%B0%8F%E4%B9%A6%E5%8C%A0/Vue+Vuex+axios+mockjs%E5%81%9A%E7%99%BB%E9%99%86%E7%95%8C%E9%9D%A2-2017-12-21-1513865126736.jpg
