@@ -15,7 +15,7 @@ grammar_cjkRuby: true
 ![效果图][2]
 文件如下：只做一个登陆的界面。
 
-![enter description here][3]
+![登陆界面vue文件和主文件，这是一个单页面应用][3]
 这里顺便总结一下svg图标使用。
 首先重新配置easywebpack的loader，修改如下：
 
