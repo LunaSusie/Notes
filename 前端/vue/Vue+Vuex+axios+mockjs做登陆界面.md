@@ -12,7 +12,7 @@ grammar_cjkRuby: true
 # 创建页面
 登陆界面参考的https://github.com/PanJiaChen/vue-element-admin这个开源项目，界面效果如下图
 ![enter description here][2]
-文件如下：只做一个登陆的界面
+文件如下：只做一个登陆的界面。
 ![enter description here][3]
 这里顺便总结一下svg图标使用。
 
