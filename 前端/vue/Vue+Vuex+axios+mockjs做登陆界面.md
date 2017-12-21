@@ -5,7 +5,7 @@ grammar_cjkRuby: true
 ---
 
 梳理Vuex+axios+mockjs的整个工作流程。
-项目参考的是这个https://github.com/PanJiaChen/vue-element-admin
+分析项目https://github.com/PanJiaChen/vue-element-admin
 # 项目创建
 项目使用easywebpack-cli创建一个easywebpack-vue项目。
 首先介绍一下这个手脚架的启动流程。
@@ -48,6 +48,8 @@ page文件夹是用来放页面文件的。如果是单页面应用，应该和�
 
 ![login方法是发送请求的，这个请求的定义在utils/request里面][14]
 
+![request里面是定义axios实例][15]
+
 
   [1]: https://www.github.com/loveshullf/Notes/raw/img/%E5%B0%8F%E4%B9%A6%E5%8C%A0/Vue+Vuex+axios+mockjs%E5%81%9A%E7%99%BB%E9%99%86%E7%95%8C%E9%9D%A2-2017-12-21-1513863635837.jpg
   [2]: https://www.github.com/loveshullf/Notes/raw/img/%E5%B0%8F%E4%B9%A6%E5%8C%A0/Vue+Vuex+axios+mockjs%E5%81%9A%E7%99%BB%E9%99%86%E7%95%8C%E9%9D%A2-2017-12-21-1513863726638.jpg
@@ -63,3 +65,4 @@ page文件夹是用来放页面文件的。如果是单页面应用，应该和�
   [12]: https://www.github.com/loveshullf/Notes/raw/img/%E5%B0%8F%E4%B9%A6%E5%8C%A0/Vue+Vuex+axios+mockjs%E5%81%9A%E7%99%BB%E9%99%86%E7%95%8C%E9%9D%A2-2017-12-21-1513865126736.jpg
   [13]: https://www.github.com/loveshullf/Notes/raw/img/%E5%B0%8F%E4%B9%A6%E5%8C%A0/Vue+Vuex+axios+mockjs%E5%81%9A%E7%99%BB%E9%99%86%E7%95%8C%E9%9D%A2-2017-12-21-1513865201217.jpg
   [14]: https://www.github.com/loveshullf/Notes/raw/img/%E5%B0%8F%E4%B9%A6%E5%8C%A0/Vue+Vuex+axios+mockjs%E5%81%9A%E7%99%BB%E9%99%86%E7%95%8C%E9%9D%A2-2017-12-21-1513865245917.jpg
+  [15]: https://www.github.com/loveshullf/Notes/raw/img/%E5%B0%8F%E4%B9%A6%E5%8C%A0/Vue+Vuex+axios+mockjs%E5%81%9A%E7%99%BB%E9%99%86%E7%95%8C%E9%9D%A2-2017-12-21-1513865299769.jpg
