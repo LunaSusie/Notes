@@ -24,8 +24,8 @@ grammar_cjkRuby: true
 ![icon-svg内容][6]
 
 ![index.js内容][7]
-
-![全局引用][8]
+加红色框的代码是导入所有的svg文件用的。
+![全局引用svg][8]
 
 
   [1]: https://www.github.com/loveshullf/Notes/raw/img/%E5%B0%8F%E4%B9%A6%E5%8C%A0/Vue+Vuex+axios+mockjs%E5%81%9A%E7%99%BB%E9%99%86%E7%95%8C%E9%9D%A2-2017-12-21-1513862554506.jpg
