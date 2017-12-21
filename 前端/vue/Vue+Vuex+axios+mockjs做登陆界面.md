@@ -32,7 +32,7 @@ page文件夹是用来放页面文件的。如果是单页面应用，应该和�
 
 ![全局引用，顺便把element-ui和normalize.css所以一起引用了，mocks一会在说][8]
 
-# 界面创建
+# 流程梳理
 界面创建安装参考项目界面来就可以。
 
 
@@ -50,6 +50,8 @@ page文件夹是用来放页面文件的。如果是单页面应用，应该和�
 
 ![request里面是定义axios实例][15]
 
+![上面全局引入的mocks][16]
+
 
   [1]: https://www.github.com/loveshullf/Notes/raw/img/%E5%B0%8F%E4%B9%A6%E5%8C%A0/Vue+Vuex+axios+mockjs%E5%81%9A%E7%99%BB%E9%99%86%E7%95%8C%E9%9D%A2-2017-12-21-1513863635837.jpg
   [2]: https://www.github.com/loveshullf/Notes/raw/img/%E5%B0%8F%E4%B9%A6%E5%8C%A0/Vue+Vuex+axios+mockjs%E5%81%9A%E7%99%BB%E9%99%86%E7%95%8C%E9%9D%A2-2017-12-21-1513863726638.jpg
@@ -66,3 +68,4 @@ page文件夹是用来放页面文件的。如果是单页面应用，应该和�
   [13]: https://www.github.com/loveshullf/Notes/raw/img/%E5%B0%8F%E4%B9%A6%E5%8C%A0/Vue+Vuex+axios+mockjs%E5%81%9A%E7%99%BB%E9%99%86%E7%95%8C%E9%9D%A2-2017-12-21-1513865201217.jpg
   [14]: https://www.github.com/loveshullf/Notes/raw/img/%E5%B0%8F%E4%B9%A6%E5%8C%A0/Vue+Vuex+axios+mockjs%E5%81%9A%E7%99%BB%E9%99%86%E7%95%8C%E9%9D%A2-2017-12-21-1513865245917.jpg
   [15]: https://www.github.com/loveshullf/Notes/raw/img/%E5%B0%8F%E4%B9%A6%E5%8C%A0/Vue+Vuex+axios+mockjs%E5%81%9A%E7%99%BB%E9%99%86%E7%95%8C%E9%9D%A2-2017-12-21-1513865299769.jpg
+  [16]: https://www.github.com/loveshullf/Notes/raw/img/%E5%B0%8F%E4%B9%A6%E5%8C%A0/Vue+Vuex+axios+mockjs%E5%81%9A%E7%99%BB%E9%99%86%E7%95%8C%E9%9D%A2-2017-12-21-1513865493231.jpg
