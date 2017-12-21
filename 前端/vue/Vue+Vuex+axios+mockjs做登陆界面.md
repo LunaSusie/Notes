@@ -35,9 +35,9 @@ page文件夹是用来放页面文件的。如果是单页面应用，应该和�
 # 界面创建
 界面创建安装参考项目界面来就可以。
 
-![入口，注意引用][9]
+![入口，注意引用，下面的store就是在这里引入的][9]
 
-在登陆的事件这里，使用到了this.$store.dispatch分发了一个loginByUsername，
+在登陆的事件这里，使用到了this.$store.dispatch分发了一个loginByUsername，然后一切就交给了
 
 ![登陆的事件][10]
 
