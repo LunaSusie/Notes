@@ -50,6 +50,8 @@ page文件夹是用来放页面文件的。如果是单页面应用，应该和�
 
 ![上面全局引入的mocks][16]
 
+写在最后：登录按钮按下之后，通过Vuex执行loginByUsername这个action，这个action使用axios实例发送login请求，最后mocks拦截这个请求mock数据返回，最后返回到按钮事件里面，显示登录成功。
+
 
   [1]: https://www.github.com/loveshullf/Notes/raw/img/%E5%B0%8F%E4%B9%A6%E5%8C%A0/Vue+Vuex+axios+mockjs%E5%81%9A%E7%99%BB%E9%99%86%E7%95%8C%E9%9D%A2-2017-12-21-1513863635837.jpg
   [2]: https://www.github.com/loveshullf/Notes/raw/img/%E5%B0%8F%E4%B9%A6%E5%8C%A0/Vue+Vuex+axios+mockjs%E5%81%9A%E7%99%BB%E9%99%86%E7%95%8C%E9%9D%A2-2017-12-21-1513863726638.jpg
