@@ -6,7 +6,8 @@ grammar_cjkRuby: true
 
 npm install vue vue-server-renderer --save
 
-# 使用vue-server-render渲染vue组件
+# 使用vue-server-render
+## 渲染vue组件
 ```javascript
 // 第 1 步：创建一个 Vue 实例
 const Vue = require('vue')
