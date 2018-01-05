@@ -24,7 +24,7 @@ renderer.renderToString(app, (err, html) => {
 })
 ```
 ## 使用一个页面模板
-```javascript?linenums
+```html?linenums
 <!DOCTYPE html>
 <html lang="en">
   <head><title>Hello</title></head>
@@ -32,4 +32,12 @@ renderer.renderToString(app, (err, html) => {
     <!--vue-ssr-outlet-->
   </body>
 </html>
+```
+```javascript?linenums
+const renderer = createRenderer({
+  template: require('fs').readFileSync('./index.template.html', 'utf-8')
+})
+renderer.renderToString(app, (err, html) => {
+  console.log(html) // will be the full page with app content injected.
+})
 ```
