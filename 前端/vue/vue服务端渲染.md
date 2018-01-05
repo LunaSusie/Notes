@@ -84,8 +84,19 @@ renderer.renderToString(app, context, (err, html) => {
 * 如果你有一个自定义指令，但是不是很容易替换为组件，则可以在创建服务器 renderer 时，使用 directives 选项所提供"服务器端版本(server-side version)"。
 # 源码结构
 ## 入口
+
 ``` javascript?linenums
-
-
+//app.js通用入口
+import Vue from 'vue'
+import App from './App.vue'
+// 导出一个工厂函数，用于创建新的
+// 应用程序、router 和 store 实例
+export function createApp () {
+  const app = new Vue({
+    // 根实例简单的渲染应用程序组件。
+    render: h => h(App)
+  })
+  return { app }
+}
 
 ```
