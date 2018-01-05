@@ -100,7 +100,7 @@ export function createApp () {
 ```
 ## 客户端入口
 ``` javascript?linenums
-//app.js通用入口
+//entry-client.js
 import { createApp } from './app'
 // 客户端特定引导逻辑……
 const { app } = createApp()
@@ -109,6 +109,7 @@ app.$mount('#app')
 ```
 ## 服务端入口
 ``` javascript?linenums
+//entry-server.js
 import { createApp } from './app'
 export default context => {
   const { app } = createApp()
