@@ -153,7 +153,7 @@ export function createApp () {
 	store,
     render: h => h(App)
   })
-  return { app ,router }
+  return { app, router, store }
 }
 ```
 ## 客户端入口
