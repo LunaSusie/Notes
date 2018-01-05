@@ -185,6 +185,7 @@ export default context => {
       if (!matchedComponents.length) {
         return reject({ code: 404 })
       }
+	   // 对所有匹配的路由组件调用 `asyncData()`
       // Promise 应该 resolve 应用程序实例，以便它可以渲染
       resolve(app)
     }, reject)
