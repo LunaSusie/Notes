@@ -22,3 +22,4 @@ renderer.renderToString(app, (err, html) => {
   // => <div data-server-rendered="true">Hello World</div>
 })
 ```
+## 使用一个页面模板
