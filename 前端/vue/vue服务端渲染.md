@@ -84,7 +84,6 @@ renderer.renderToString(app, context, (err, html) => {
 * 如果你有一个自定义指令，但是不是很容易替换为组件，则可以在创建服务器 renderer 时，使用 directives 选项所提供"服务器端版本(server-side version)"。
 # 源码结构
 ## 通用入口
-
 ``` javascript?linenums
 //app.js通用入口
 import Vue from 'vue'
