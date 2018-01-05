@@ -24,3 +24,12 @@ renderer.renderToString(app, (err, html) => {
 })
 ```
 ## 使用一个页面模板
+```javascript?linenums
+<!DOCTYPE html>
+<html lang="en">
+  <head><title>Hello</title></head>
+  <body>
+    <!--vue-ssr-outlet-->
+  </body>
+</html>
+```
