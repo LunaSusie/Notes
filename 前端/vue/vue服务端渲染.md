@@ -93,6 +93,7 @@ export function createRouter () {
   return new Router({
     mode: 'history',
     routes: [
+	//异步路由
       { path: '/', component: () => import('./components/Home.vue') },
       { path: '/item/:id', component: () => import('./components/Item.vue') }
     ]
