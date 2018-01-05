@@ -84,7 +84,36 @@ renderer.renderToString(app, context, (err, html) => {
 * 如果你有一个自定义指令，但是不是很容易替换为组件，则可以在创建服务器 renderer 时，使用 directives 选项所提供"服务器端版本(server-side version)"。
 # 源码结构
 ## 状态
-
+```javascript?linenums
+// store.js
+import Vue from 'vue'
+import Vuex from 'vuex'
+Vue.use(Vuex)
+// 假定我们有一个可以返回 Promise 的
+// 通用 API（请忽略此 API 具体实现细节）
+import { fetchItem } from './api'
+export function createStore () {
+  return new Vuex.Store({
+    state: {
+      items: {}
+    },
+    actions: {
+      fetchItem ({ commit }, id) {
+        // `store.dispatch()` 会返回 Promise，
+        // 以便我们能够知道数据在何时更新
+        return fetchItem(id).then(item => {
+          commit('setItem', { id, item })
+        })
+      }
+    },
+    mutations: {
+      setItem (state, { id, item }) {
+        Vue.set(state.items, id, item)
+      }
+    }
+  })
+}
+```
 ## 路由
 ```javascript?linenums
 // router.js
