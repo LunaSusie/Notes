@@ -150,6 +150,7 @@ export function createApp () {
   const app = new Vue({
    // 创建应用程序实例，将 router 和 store 注入
 	router,
+	store,
     render: h => h(App)
   })
   return { app ,router }
