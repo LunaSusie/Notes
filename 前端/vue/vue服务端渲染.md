@@ -101,15 +101,9 @@ export function createApp () {
 ## 客户端入口
 ``` javascript?linenums
 //app.js通用入口
-import Vue from 'vue'
-import App from './App.vue'
-// 导出一个工厂函数，用于创建新的
-// 应用程序、router 和 store 实例
-export function createApp () {
-  const app = new Vue({
-    // 根实例简单的渲染应用程序组件。
-    render: h => h(App)
-  })
-  return { app }
-}
+import { createApp } from './app'
+// 客户端特定引导逻辑……
+const { app } = createApp()
+// 这里假定 App.vue 模板中根元素具有 `id="app"`
+app.$mount('#app')
 ```
