@@ -68,3 +68,8 @@ renderer.renderToString(app, context, (err, html) => {
   // with meta tags injected
 })
 ```
+# 通用代码
+## 服务器上的数据响应
+每个请求应该都是全新的、独立的应用程序实例。
+服务器上“预取”数据("pre-fetching" data) - 这意味着在我们开始渲染时，我们的应用程序就已经解析完成其状态。
+数据进行响应式的过程在服务器上是多余的，所以默认情况下禁用。
