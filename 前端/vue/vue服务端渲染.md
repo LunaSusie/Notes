@@ -73,3 +73,5 @@ renderer.renderToString(app, context, (err, html) => {
 每个请求应该都是全新的、独立的应用程序实例。
 服务器上“预取”数据("pre-fetching" data) - 这意味着在我们开始渲染时，我们的应用程序就已经解析完成其状态。
 数据进行响应式的过程在服务器上是多余的，所以默认情况下禁用。
+## 组件生命周期钩子函数
+由于没有动态更新，所有的生命周期钩子函数中，只有 beforeCreate 和 created 会在服务器端渲染(SSR)过程中被调用。这就是说任何其他生命周期钩子函数中的代码（例如 beforeMount 或 mounted），只会在客户端执行。
