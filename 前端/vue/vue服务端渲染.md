@@ -107,3 +107,11 @@ const { app } = createApp()
 // 这里假定 App.vue 模板中根元素具有 `id="app"`
 app.$mount('#app')
 ```
+## 服务端入口
+``` javascript?linenums
+import { createApp } from './app'
+export default context => {
+  const { app } = createApp()
+  return app
+}
+```
