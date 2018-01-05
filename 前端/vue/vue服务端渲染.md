@@ -55,3 +55,16 @@ renderer.renderToString(app, (err, html) => {
   </body>
 </html>
 ```
+```javascript?linenums
+const context = {
+  title: 'hello',
+  meta: `
+    <meta ...>
+    <meta ...>
+  `
+}
+renderer.renderToString(app, context, (err, html) => {
+  // page title will be "Hello"
+  // with meta tags injected
+})
+```
