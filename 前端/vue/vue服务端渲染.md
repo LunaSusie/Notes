@@ -160,7 +160,7 @@ export function createApp () {
 ``` javascript?linenums
 // entry-client.js
 import { createApp } from './app'
-const { app, router } = createApp()
+const { app, router, store } = createApp()
 router.onReady(() => {
   app.$mount('#app')
 })
