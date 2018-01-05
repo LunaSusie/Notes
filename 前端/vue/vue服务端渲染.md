@@ -85,7 +85,18 @@ renderer.renderToString(app, context, (err, html) => {
 # 源码结构
 ## 路由
 ```javascript?linenums
-
+// router.js
+import Vue from 'vue'
+import Router from 'vue-router'
+Vue.use(Router)
+export function createRouter () {
+  return new Router({
+    mode: 'history',
+    routes: [
+      // ...
+    ]
+  })
+}
 ```
 ## 通用入口
 ``` javascript?linenums
