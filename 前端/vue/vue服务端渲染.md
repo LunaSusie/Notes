@@ -148,7 +148,7 @@ export function createApp () {
   // 同步路由状态(route state)到 store
   sync(store, router)
   const app = new Vue({
-    // 根实例简单的渲染应用程序组件。
+   // 创建应用程序实例，将 router 和 store 注入
 	router,
     render: h => h(App)
   })
