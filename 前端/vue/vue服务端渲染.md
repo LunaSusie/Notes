@@ -41,3 +41,17 @@ renderer.renderToString(app, (err, html) => {
   console.log(html) // will be the full page with app content injected.
 })
 ```
+## 模板插值
+```html?linenums
+<html>
+  <head>
+    <!-- 使用双花括号(double-mustache)进行 HTML 转义插值(HTML-escaped interpolation) -->
+    <title>{{ title }}</title>
+    <!-- 使用三花括号(triple-mustache)进行 HTML 不转义插值(non-HTML-escaped interpolation) -->
+    {{{ meta }}}
+  </head>
+  <body>
+    <!--vue-ssr-outlet-->
+  </body>
+</html>
+```
