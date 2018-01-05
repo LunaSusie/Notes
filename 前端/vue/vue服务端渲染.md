@@ -77,3 +77,4 @@ renderer.renderToString(app, context, (err, html) => {
 由于没有动态更新，所有的生命周期钩子函数中，只有 beforeCreate 和 created 会在服务器端渲染(SSR)过程中被调用。这就是说任何其他生命周期钩子函数中的代码（例如 beforeMount 或 mounted），只会在客户端执行。
 你应该避免在 beforeCreate 和 created 生命周期时产生全局副作用的代码
 ## 访问特定平台(Platform-Specific) API
+对于共享于服务器和客户端，但用于不同平台 API 的任务(task)，建议将平台特定实现包含在通用 API 中，或者使用为你执行此操作的 library。例如，axios 是一个 HTTP 客户端，可以向服务器和客户端都暴露相同的 API。
