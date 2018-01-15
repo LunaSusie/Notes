@@ -132,3 +132,11 @@ container.Register(
 var personService = container.Resolve<IPersonAppService>();
 personService.CreatePerson("Yunus Emre", 19);
 ```
+* 创建了WindsorContainer。然后 用它们的接口注册 PersonRepository和PersonAppService。
+* 然后我们要求容器创建一个IPersonAppService。
+## abp依赖注入基础结构
+### 注册依赖关系
+#### 常规注册
+```csharp?linenums
+
+```
