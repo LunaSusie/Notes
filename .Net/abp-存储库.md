@@ -57,5 +57,6 @@ Task<TEntity> FirstOrDefaultAsync(Expression<Func<TEntity, bool>> predicate);
 TEntity Load(TPrimaryKey id);
 ```
 * Get方法用于使用给定的主键（Id）获取实体。
+* Single方法
 #### 
 
