@@ -36,3 +36,4 @@ public class MyAuthorizationProvider : AuthorizationProvider
 	* 1
 	* MultiTenancySides：对于多租户应用程序，租户或主机可以使用许可。这是一个标志枚举，因此双方都可以使用权限。
 	* featureDependency：可用于声明对特征的依赖关系 。因此，只有在满足特征依赖关系的情况下才能授予此权限。它等待一个实现IFeatureDependency的对象。默认实现是SimpleFeatureDependency类。用法示例： new SimpleFeatureDependency("MyFeatureName")
+* 权限可以具有父权和子权限。虽然这不会影响权限检查，但可能有助于在UI中对权限进行分组。
