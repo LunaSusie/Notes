@@ -42,3 +42,4 @@ public class MyAuthorizationProvider : AuthorizationProvider
 Configuration.Authorization.Providers.Add<MyAuthorizationProvider>();
 ```
 * 授权提供程序自动注册到依赖注入。因此，授权提供者可以注入任何依赖项（如存储库）以使用其他来源构建权限定义。
+## 检查权限
