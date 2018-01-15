@@ -35,6 +35,7 @@ public interface IPersonRepository : IRepository<Person>
 
 }
 ```
-IPersonRepository扩展了IRepository <TEntity>。它用于定义具有主键类型int（Int32）的实体。
+* IPersonRepository扩展了IRepository <TEntity>。它用于定义具有主键类型int（Int32）的实体。
+* 
 * 实现
 
