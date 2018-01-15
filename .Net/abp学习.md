@@ -251,3 +251,4 @@ using (var scope = _iocResolver.CreateScope())
     //...
 }
 ```
+* 范围也可以使用IScopedIocResolver注入。
