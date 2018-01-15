@@ -5,6 +5,7 @@ grammar_cjkRuby: true
 ---
 
 # 介绍
+## 主要功能
 * Dependency Injection （依赖注入）：ABP使用并提供强大而传统的DI基础设施。
 * Repository （仓储）：ABP可以为每个实体创建一个默认存储库。存储库抽象DBMS和ORM并简化数据访问逻辑。
 * Authorization（授权）：ABP可以检查权限。它使用声明性属性简化授权，但也有其他授权方式。
@@ -17,3 +18,9 @@ grammar_cjkRuby: true
 * Auto Mapping （自动映射）：使用AutoMapper库来执行映射。因此，根据命名约定，我们可以轻松地将属性从一个对象映射到另一个对象。
 * Dynamic web api layer（动态webapi）：我们通常编写一个封装Web API控制器来向JavaScript客户端公开方法。ABP在运行时自动执行该操作。
 * Dynamic Javascript AJAX Proxy（动态javascriptAjax代理）：ABP创建JavaScript代理方法，这些方法调用应用程序服务方法就像调用客户端上的JavaScript方法一样简单。
+## 其他功能
+* modularity（模块化）：
+* Data Filters（数据过滤）：
+* Multi Tenancy（多租户）：
+* Setting ManageMent（）：
+* Unit & Integration Testing
