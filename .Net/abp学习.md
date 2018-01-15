@@ -176,3 +176,7 @@ public class MyPersonManager : IPersonManager, ISingletonDependency
 * 注意依赖被声明为Singleton。
 #### 自定义/直接注册
 使用IocManager和Castle Windsor注册依赖关系。
+#### 使用IocManager
+```csharp?linenums
+IocManager.Register<IMyService, MyService>(DependencyLifeStyle.Transient);
+```
