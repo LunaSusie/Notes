@@ -157,4 +157,4 @@ public class PersonAppService : IPersonAppService
 IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
 ```
 * Assembly.GetExecutingAssembly（）获取包含此代码的程序集的引用。您可以将其他程序集传递给RegisterAssemblyByConvention方法。
-* 您可以通过实现IConventionalRegisterer接口实现自己的常规注册类，调用 IocManager.AddConventionalRegisterer方法来编写自己的常规注册 类。你应该添加它在你的模块的预初始化方法。
+* 您可以通过实现IConventionalRegisterer接口实现自己的常规（约定）注册类，调用 IocManager.AddConventionalRegisterer方法来编写自己的常规注册 类。你应该添加它在你的模块的预初始化方法。
