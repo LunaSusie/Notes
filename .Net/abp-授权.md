@@ -16,5 +16,16 @@ grammar_cjkRuby: true
 ASP.NET Boilerplate被设计为模块化的。所以，不同的模块可以有不同的权限。
 一个模块应该创建一个派生自AuthorizationProvider的类来定义它的权限。
 ```cs?linenums
+public class MyAuthorizationProvider : AuthorizationProvider
+{
+    public override void SetPermissions(IPermissionDefinitionContext context)
+    {
+        var administration = context.CreatePermission("Administration");
 
+        var userManagement = administration.CreateChildPermission("Administration.UserManagement");
+        userManagement.CreateChildPermission("Administration.UserManagement.CreateUser");
+
+        var roleManagement = administration.CreateChildPermission("Administration.RoleManagement");
+    }
+}
 ```
