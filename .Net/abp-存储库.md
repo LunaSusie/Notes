@@ -88,3 +88,4 @@ var people = _personRepository.Query(q => q.Where(p => p.Name.Contains("H")).Ord
 ```
 * Query方法接受一个接收IQueryable \<T\>的lambda（或方法）并返回任何类型的对象。
 #### 插入
+
