@@ -70,3 +70,4 @@ public void SomeMethod(SomeMethodInput input)
 如果受保护，方法应该是虚拟的。
 ### 有四种类型的授权特性
 在应用程序服务（应用程序层）中，我们使用 Abp.Authorization.AbpAuthorize属性。
+在MVC控制器（web层）中，我们使用 Abp.Web.Mvc.Authorization.AbpMvcAuthorize属性。
