@@ -77,3 +77,4 @@ public void SomeMethod(SomeMethodInput input)
 您可以通过将AbpAllowAnonymous属性添加到应用程序服务来禁用方法/类的授权 。
 对于MVC，Web API和ASP.NET Core Controllers 使用 AllowAnonymous，它们是这些框架的本地属性。
 ### 使用IPermissionChecker
+虽然AbpAuthorize属性对于大多数情况来说已经足够了，但是我们必须检查方法体中的权限。
