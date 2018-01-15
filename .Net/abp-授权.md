@@ -64,3 +64,4 @@ public void SomeMethod(SomeMethodInput input)
 ### AbpAuthorize特性限制
 不能用于私人方法。
 不能用于静态方法。
+不能用于非注入类的方法
