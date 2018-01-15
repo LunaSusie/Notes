@@ -161,5 +161,5 @@ IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
 * 您可以通过实现IConventionalRegisterer接口实现自己的常规（约定）注册类，调用 IocManager.AddConventionalRegisterer方法来编写自己的常规（约定）注册 类。你可以添加它在你的模块的预初始化方法。
 #### 帮助接口
 注册不符合约定的特殊类，abp提供了两个帮助接口：
-* ITransientDependency 
-* ISingletonDependency 
+* ITransientDependency  
+* ISingletonDependency  单例
