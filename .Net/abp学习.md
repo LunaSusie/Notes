@@ -239,3 +239,5 @@ public class MySampleClass : ITransientDependency
     }
 }
 ```
+* 它构造器注入IIcResolver并用它来解析和释放对象。
+* Resolve方法有一些重载可以根据需要使用。
