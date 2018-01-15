@@ -211,3 +211,5 @@ public class PersonAppService
 }
 ```
 * IPersonRepository从构造函数注入，ILogger注入公共属性。
+* 这是使用DI系统最合适的方式。
+#### IIocResolver，IIocManager和IScopedIocResolver
