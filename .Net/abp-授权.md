@@ -34,4 +34,4 @@ public class MyAuthorizationProvider : AuthorizationProvider
 	* name:系统范围的唯一名称。
 	* display name:稍后在UI中可用于显示权限的可本地化的字符串。
 	* 1
-	* MultiTenancySides对于多租户应用程序，租户或主机可以使用许可。这是一个标志枚举，因此双方都可以使用权限。
+	* MultiTenancySides:对于多租户应用程序，租户或主机可以使用许可。这是一个标志枚举，因此双方都可以使用权限。
