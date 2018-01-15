@@ -99,3 +99,5 @@ public void CreateUser(CreateOrUpdateUserInput input)
     //A user can not reach this point if he is not granted for "Administration.UserManagement.CreateUser" permission.
 }
 ```
+### Razor Views
+基本视图类定义了IsGranted方法来检查当前用户是否有权限。因此，我们可以有条件地渲染视图。
