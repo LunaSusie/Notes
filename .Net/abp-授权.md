@@ -74,4 +74,5 @@ public void SomeMethod(SomeMethodInput input)
 在ASP.NET Web API中，我们使用 Abp.WebApi.Authorization.AbpApiAuthorize属性。
 在ASP.NET Core中，我们使用 Abp.AspNetCore.Mvc.Authorization.AbpMvcAuthorize属性。
 ### 禁止授权
-您可以通过将AbpAllowAnonymous属性添加到应用程序服务来禁用方法/类的授权 。对于MVC，Web API和ASP.NET Core Controllers 使用 AllowAnonymous，它们是这些框架的本地属性。
+您可以通过将AbpAllowAnonymous属性添加到应用程序服务来禁用方法/类的授权 。
+对于MVC，Web API和ASP.NET Core Controllers 使用 AllowAnonymous，它们是这些框架的本地属性。
