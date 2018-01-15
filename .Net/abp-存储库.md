@@ -28,12 +28,13 @@ public class PersonAppService : IPersonAppService
 }
 ```
 ## 自定义存储库
-* 接口
+### 接口
 ```csharp?linenums
 public interface IPersonRepository : IRepository<Person>
 {
 
 }
 ```
+IPersonRepository扩展了IRepository <TEntity>。它用于定义具有主键类型int（Int32）的实体。
 * 实现
 
