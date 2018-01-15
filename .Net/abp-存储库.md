@@ -43,3 +43,4 @@ public interface IPersonRepository : IRepository<Person, long>
 * 如果您的实体的主键不是int，则可以如下所示扩展 IRepository \<TEntity，TPrimaryKey\>接口。
 ### 实现
 
+
