@@ -135,3 +135,24 @@ long LongCount(Expression<Func<TEntity, bool>> predicate);
 Task<long> LongCountAsync(Expression<Func<TEntity, bool>> predicate);
 ```
 #### 关于异步方法
+```csharp?linenums
+public class PersonAppService : AbpWpfDemoAppServiceBase, IPersonAppService
+{
+    private readonly IRepository<Person> _personRepository;
+
+    public PersonAppService(IRepository<Person> personRepository)
+    {
+        _personRepository = personRepository;
+    }
+
+    public async Task<GetPeopleOutput> GetAllPeople()
+    {
+        var people = await _personRepository.GetAllListAsync();
+
+        return new GetPeopleOutput
+        {
+            People = Mapper.Map<List<PersonDto>>(people)
+        };
+    }
+}
+```
