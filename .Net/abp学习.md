@@ -175,3 +175,4 @@ public class MyPersonManager : IPersonManager, ISingletonDependency
 * 当需要注入IPersonManager时，使用MyPersonManager类。
 * 注意依赖被声明为Singleton。
 #### 自定义/直接注册
+使用IocManager和Castle Windsor注册依赖关系。
