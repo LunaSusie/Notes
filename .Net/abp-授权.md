@@ -38,3 +38,6 @@ public class MyAuthorizationProvider : AuthorizationProvider
 	* featureDependency：可用于声明对特征的依赖关系 。因此，只有在满足特征依赖关系的情况下才能授予此权限。它等待一个实现IFeatureDependency的对象。默认实现是SimpleFeatureDependency类。用法示例： new SimpleFeatureDependency("MyFeatureName")
 * 权限可以具有父权和子权限。虽然这不会影响权限检查，但可能有助于在UI中对权限进行分组。
 * 创建授权提供者后，我们应该在我们模块的PreInitialize方法中注册它：
+```csharp?linenums
+Configuration.Authorization.Providers.Add<MyAuthorizationProvider>();
+```
