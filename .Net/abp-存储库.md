@@ -29,6 +29,11 @@ public class PersonAppService : IPersonAppService
 ```
 ## 自定义存储库
 * 接口
+```csharp?linenums
+public interface IPersonRepository : IRepository<Person>
+{
 
+}
+```
 * 实现
 
