@@ -120,3 +120,15 @@ personService.CreatePerson("Yunus Emre", 19);
 * 因此，PersonAppService实际上可以写日志。如果我们不设置记录器，它不会写入日志。
 * ILogger是PersonAppService 的可选依赖。
 ## 依赖注入框架：Castle Windsor 框架
+在一个依赖注入框架中，你首先注册你的接口/类到依赖注入框架，然后你可以解析（创建）一个对象。
+```csharp?linenums
+var container = new WindsorContainer();
+
+container.Register(
+        Component.For<IPersonRepository>().ImplementedBy<PersonRepository>().LifestyleTransient(),
+        Component.For<IPersonAppService>().ImplementedBy<PersonAppService>().LifestyleTransient()
+    );
+
+var personService = container.Resolve<IPersonAppService>();
+personService.CreatePerson("Yunus Emre", 19);
+```
