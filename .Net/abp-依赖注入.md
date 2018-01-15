@@ -3,8 +3,6 @@ title: abp-依赖注入
 tags: 依赖注入
 grammar_cjkRuby: true
 ---
-
-
 # 依赖注入
 ## 传统依赖注入
 假设有一个`application service`使用一个`repository`去插入一个`entities`到数据库：
