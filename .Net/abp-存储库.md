@@ -163,3 +163,4 @@ public class PersonAppService : AbpWpfDemoAppServiceBase, IPersonAppService
 * 如果一个存储库方法调用另一个存储库方法（即使是不同存储库的一个方法），它们共享相同的连接和事务。连接由进入存储库的第一个方法进行管理（打开/关闭）。
 #### 存储库的生命周期
 所有存储库实例都是Transient。这意味着，它们是按照使用情况进行实例化的。
+#### 存储库最佳实践
