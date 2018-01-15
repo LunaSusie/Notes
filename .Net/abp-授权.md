@@ -10,3 +10,4 @@ grammar_cjkRuby: true
 ## 关于IPermissionChecker
 授权系统使用IPermissionChecker来检查权限。
 虽然你可以用你自己的方式来实现它，但它完全在 模块零项目中实现。
+如果没有实现，则使用NullPermissionChecker，将所有权限授予每个人。
