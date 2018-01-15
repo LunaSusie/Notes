@@ -167,3 +167,4 @@ public class PersonAppService : AbpWpfDemoAppServiceBase, IPersonAppService
 * 对于T的实体，尽可能使用IRepository \<T\>。除非真正需要，否则不要创建自定义存储库。
 * 如果您正在创建自定义存储库（通过扩展IRepository <TEntity>）;
 	* 存储库类应该是无状态的。这意味着，您不应定义存储库级别的状态对象，并且存储库方法调用不应该影响另一个调用。
+	* 自定义存储库方法不应包含业务逻辑或应用程序逻辑。它应该只执行数据相关或特定于orm的任务。
