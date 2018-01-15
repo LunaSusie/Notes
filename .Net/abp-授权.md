@@ -31,3 +31,6 @@ public class MyAuthorizationProvider : AuthorizationProvider
 ```
 * IPermissionDefinitionContext有获取和创建权限的方法。
 * 权限属性：
+	* name:系统范围的唯一名称。
+	* display name
+	* 
