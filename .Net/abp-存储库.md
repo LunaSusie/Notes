@@ -45,3 +45,4 @@ public interface IPersonRepository : IRepository<Person, long>
 仓库在NHibernate和 EntityFramework中是作为开箱即用的方式实现的。
 ### 基础知识库方法
 
+
