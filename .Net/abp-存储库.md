@@ -121,4 +121,4 @@ void Delete(Expression<Func<TEntity, bool>> predicate);
 Task DeleteAsync(Expression<Func<TEntity, bool>> predicate);
 ```
 * 第一个方法接受一个现有的实体。
-* 
+* 第二个方法接受实体的Id删除。
