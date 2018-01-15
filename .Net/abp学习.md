@@ -136,7 +136,8 @@ personService.CreatePerson("Yunus Emre", 19);
 * 然后我们要求容器创建一个IPersonAppService。
 ## abp依赖注入基础结构
 ### 注册依赖关系
-### 常规（约定）注册类
+abp有多种依赖注册类注册您的类。通常常规注册类能满足大部分需求。
+#### 常规（约定）注册类
 ASP.NET Boilerplate按照`约定`自动注册所有的 Repositories，Domain，Application Service，MVC Controllers和Web API Controllers。
 例如，您可能有一个IPersonAppService接口和一个实现它的PersonAppService类：
 ```csharp?linenums
@@ -158,4 +159,4 @@ IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
 ```
 * Assembly.GetExecutingAssembly（）获取包含此代码的程序集的引用。您可以将其他程序集传递给RegisterAssemblyByConvention方法。
 * 您可以通过实现IConventionalRegisterer接口实现自己的常规（约定）注册类，调用 IocManager.AddConventionalRegisterer方法来编写自己的常规（约定）注册 类。你可以添加它在你的模块的预初始化方法。
-### 
+####
