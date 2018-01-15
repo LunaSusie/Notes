@@ -79,5 +79,6 @@ IQueryable<TEntity> GetAll();
 * 通过使用GetAll，几乎所有的查询都可以用Linq编写。即使它可以在连接表达式中使用。
 #### 关于IQueryable <T>
 从存储库方法调用GetAll（）时，必须有一个打开的数据库连接。这是因为延迟执行IQueryable <T>。它不会执行数据库查询，除非您调用ToList（）方法或在foreach循环中使用IQueryable <T>（或以某种方式访问​​查询的项目）。所以，当你调用ToList（）方法时，数据库连接必须是活着的。
-#### 
+#### 自定义返回值
+
 
