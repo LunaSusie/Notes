@@ -66,6 +66,11 @@ TEntity Load(TPrimaryKey id);
 * Load方法不从数据库检索实体，但为延迟加载创建代理对象。如果你只使用Id属性，Entity实际上没有被检索。只有在访问实体的其他属性时才从数据库中检索。出于性能的原因，可以使用这个来代替Get。如果ORM提供者没有实现它，Load方法和Get方法一样工作。
 #### 获取实体列表
 ```csharp?linenums
+List<TEntity> GetAllList();
+Task<List<TEntity>> GetAllListAsync();
+List<TEntity> GetAllList(Expression<Func<TEntity, bool>> predicate);
+Task<List<TEntity>> GetAllListAsync(Expression<Func<TEntity, bool>> predicate);
+IQueryable<TEntity> GetAll();
 ```
 #### 
 
