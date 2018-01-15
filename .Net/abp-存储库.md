@@ -164,4 +164,4 @@ public class PersonAppService : AbpWpfDemoAppServiceBase, IPersonAppService
 #### 存储库的生命周期
 所有存储库实例都是Transient。这意味着，它们是按照使用情况进行实例化的。
 #### 存储库最佳实践
-对于T的实体，尽可能使用IRepository <T>。除非真正需要，否则不要创建自定义存储库。
+* 对于T的实体，尽可能使用IRepository <T>。除非真正需要，否则不要创建自定义存储库。
