@@ -252,4 +252,7 @@ using (var scope = _iocResolver.CreateScope())
 }
 ```
 * 范围也可以使用IScopedIocResolver注入。
+* #### 附加功能
+* IShouldInitialize接口
 ### ASP.NET MVC和ASP.NET Web API集成
+在ASP.NET MVC应用程序中，它通常是一个 Controller类。我们也可以在控制器中使用构造器注入和属性注入模式。当一个请求来到我们的应用程序，控制器是使用IOC容器创建的，并且所有依赖项都是递归解析的。
