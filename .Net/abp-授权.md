@@ -71,11 +71,11 @@ public void SomeMethod(SomeMethodInput input)
 ### 有四种类型的授权特性
 在应用程序服务（应用程序层）中，我们使用 Abp.Authorization.AbpAuthorize属性。
 在MVC控制器（web层）中，我们使用 Abp.Web.Mvc.Authorization.AbpMvcAuthorize属性。
-在ASP.NET Web API中，我们使用 Abp.WebApi.Authorization.AbpApiAuthorize属性。
-在ASP.NET Core中，我们使用 Abp.AspNetCore.Mvc.Authorization.AbpMvcAuthorize属性。
+在`ASP.NET Web API`中，我们使用 Abp.WebApi.Authorization.AbpApiAuthorize属性。
+在`ASP.NET Core`中，我们使用 Abp.AspNetCore.Mvc.Authorization.AbpMvcAuthorize属性。
 ### 禁止授权
 您可以通过将AbpAllowAnonymous属性添加到应用程序服务来禁用方法/类的授权 。
-对于MVC，Web API和ASP.NET Core Controllers 使用 AllowAnonymous，它们是这些框架的本地属性。
+对于`MVC`，`Web API`和`ASP.NET Core Controllers` 使用 `AllowAnonymous`，它们是这些框架的本地属性。
 ### 使用IPermissionChecker
 虽然AbpAuthorize属性对于大多数情况来说已经足够了，但是我们必须检查方法体中的权限。
 我们可以注入并使用IPermissionChecker：
