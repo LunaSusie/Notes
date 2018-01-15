@@ -69,3 +69,4 @@ public void SomeMethod(SomeMethodInput input)
 如果直接从类引用（如ASP.NET MVC或Web API控制器）中调用方法，该方法应该是虚拟的。
 如果受保护，方法应该是虚拟的。
 ### 有四种类型的授权特性
+在应用程序服务（应用程序层）中，我们使用 Abp.Authorization.AbpAuthorize属性。
