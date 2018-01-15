@@ -24,3 +24,7 @@ grammar_cjkRuby: true
 * Multi Tenancy（多租户）：它完全支持多租户，包括单租户架构中的单个数据库或数据库。
 * Setting ManageMent（设置管理）：提供强大的基础设施来获取/更改应用程序，租户和用户级别设置。
 * Unit & Integration Testing（单元和集成测试）：考虑到可测试性。还提供了基类来简化单元和集成测试。
+
+# 依赖注入
+## 传统依赖注入问题
+假设有一个`application service`使用一个`repository`去插入一个`entities`到数据库。
