@@ -84,4 +84,5 @@ IQueryable<TEntity> GetAll();
 ```csharp?linenums
 T Query<T>(Func<IQueryable<TEntity>, T> queryMethod);
 ```
+*Query方法接受一个接收IQueryable <T>的lambda（或方法）并返回任何类型的对象。
 
