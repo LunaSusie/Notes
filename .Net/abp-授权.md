@@ -52,3 +52,4 @@ public void CreateUser(CreateUserInput input)
     //A user can not execute this method if he is not granted for "Administration.UserManagement.CreateUser" permission.
 }
 ```
+* CreateUser方法不能被授予“ Administration.UserManagement.CreateUser ” 权限的用户调用。
