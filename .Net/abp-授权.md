@@ -61,4 +61,4 @@ public void SomeMethod(SomeMethodInput input)
     //A user can not execute this method if he did not login.
 }
 ```
-### AbpAuthorize属性注释
+### AbpAuthorize特性限制
