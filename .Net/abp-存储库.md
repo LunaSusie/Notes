@@ -109,3 +109,5 @@ Task<TPrimaryKey> InsertOrUpdateAndGetIdAsync(TEntity entity);
 TEntity Update(TEntity entity);
 Task<TEntity> UpdateAsync(TEntity entity);
 ```
+#### 删除
+
