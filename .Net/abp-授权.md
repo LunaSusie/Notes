@@ -110,5 +110,6 @@ public void CreateUser(CreateOrUpdateUserInput input)
 ### 客户端（Javascript）
 在客户端，我们可以使用在abp.auth命名空间中定义的API 。在大多数情况下，我们需要检查当前用户是否具有特定权限（使用权限名称）。
 ```csharp?linenums
-在客户端，我们可以使用在abp.auth命名空间中定义的API 。在大多数情况下，我们需要检查当前用户是否具有特定权限（使用权限名称）。
+abp.auth.isGranted('Administration.UserManagement.CreateUser');
 ```
+您还可以使用abp.auth.grantedPermissions让所有授予的权限或abp.auth.allPermissions获得应用程序中所有可用的权限名。在其他运行时检查abp.auth命名空间。
