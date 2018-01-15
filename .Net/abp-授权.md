@@ -107,3 +107,4 @@ public void CreateUser(CreateOrUpdateUserInput input)
     <button id="CreateNewUserButton" class="btn btn-primary"><i class="fa fa-plus"></i> @L("CreateNewUser")</button>
 }
 ```
+### 客户端（Javascript）
