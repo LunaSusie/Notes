@@ -252,3 +252,4 @@ using (var scope = _iocResolver.CreateScope())
 }
 ```
 * 范围也可以使用IScopedIocResolver注入。
+### ASP.NET MVC和ASP.NET Web API集成
