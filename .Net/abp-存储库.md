@@ -88,4 +88,13 @@ var people = _personRepository.Query(q => q.Where(p => p.Name.Contains("H")).Ord
 ```
 * Query方法接受一个接收IQueryable \<T\>的lambda（或方法）并返回任何类型的对象。
 #### 插入
-
+```csharp?linenums
+TEntity Insert(TEntity entity);
+Task<TEntity> InsertAsync(TEntity entity);
+TPrimaryKey InsertAndGetId(TEntity entity);
+Task<TPrimaryKey> InsertAndGetIdAsync(TEntity entity);
+TEntity InsertOrUpdate(TEntity entity);
+Task<TEntity> InsertOrUpdateAsync(TEntity entity);
+TPrimaryKey InsertOrUpdateAndGetId(TEntity entity);
+Task<TPrimaryKey> InsertOrUpdateAndGetIdAsync(TEntity entity);
+```
