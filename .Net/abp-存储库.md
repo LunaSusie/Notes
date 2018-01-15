@@ -49,12 +49,15 @@ public interface IPersonRepository : IRepository<Person, long>
 ```csharp?linenums
 TEntity Get(TPrimaryKey id);
 Task<TEntity> GetAsync(TPrimaryKey id);
+
 TEntity Single(Expression<Func<TEntity, bool>> predicate);
 Task<TEntity> SingleAsync(Expression<Func<TEntity, bool>> predicate);
+
 TEntity FirstOrDefault(TPrimaryKey id);
 Task<TEntity> FirstOrDefaultAsync(TPrimaryKey id);
 TEntity FirstOrDefault(Expression<Func<TEntity, bool>> predicate);
 Task<TEntity> FirstOrDefaultAsync(Expression<Func<TEntity, bool>> predicate);
+
 TEntity Load(TPrimaryKey id);
 ```
 * Get方法用于使用给定的主键（Id）获取实体。
