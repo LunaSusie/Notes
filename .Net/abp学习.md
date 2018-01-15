@@ -214,3 +214,28 @@ public class PersonAppService
 * 这是使用DI系统最合适的方式。
 #### IIocResolver，IIocManager和IScopedIocResolver
 你可能不得不直接解析你的依赖，而不是构造函数和属性注入。
+```csharp?linenums
+public class MySampleClass : ITransientDependency
+{
+    private readonly IIocResolver _iocResolver;
+
+    public MySampleClass(IIocResolver iocResolver)
+    {
+        _iocResolver = iocResolver;
+    }
+
+    public void DoIt()
+    {
+        //Resolving, using and releasing manually
+        var personService1 = _iocResolver.Resolve<PersonAppService>();
+        personService1.CreatePerson(new CreatePersonInput { Name = "Yunus", Surname = "Emre" });
+        _iocResolver.Release(personService1);
+
+        //Resolving and using in a safe way
+        using (var personService2 = _iocResolver.ResolveAsDisposable<PersonAppService>())
+        {
+            personService2.Object.CreatePerson(new CreatePersonInput { Name = "Yunus", Surname = "Emre" });
+        }
+    }
+}
+```
