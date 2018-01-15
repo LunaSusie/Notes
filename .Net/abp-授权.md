@@ -80,5 +80,13 @@ public void SomeMethod(SomeMethodInput input)
 虽然AbpAuthorize属性对于大多数情况来说已经足够了，但是我们必须检查方法体中的权限。
 我们可以注入并使用IPermissionChecker：
 ```csharp?linenums
+public void CreateUser(CreateOrUpdateUserInput input)
+{
+    if (!PermissionChecker.IsGranted("Administration.UserManagement.CreateUser"))
+    {
+        throw new AbpAuthorizationException("You are not authorized to create user!");
+    }
 
+    //A user can not reach this point if he is not granted for "Administration.UserManagement.CreateUser" permission.
+}
 ```
