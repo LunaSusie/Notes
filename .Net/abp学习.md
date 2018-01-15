@@ -26,7 +26,7 @@ grammar_cjkRuby: true
 * Unit & Integration Testing（单元和集成测试）：考虑到可测试性。还提供了基类来简化单元和集成测试。
 
 # 依赖注入
-## 传统依赖注入问题
+## 传统依赖注入
 假设有一个`application service`使用一个`repository`去插入一个`entities`到数据库：
 ```csharp?linenums
 public class PersonAppService
@@ -150,4 +150,6 @@ public class PersonAppService : IPersonAppService
     //...
 }
 ```
+* ASP.NET Boilerplate自动注册它，因为它实现了 IApplicationService接口（它只是一个空的接口）。它被注册为瞬态（每个用户创建的实例）。当你注入（使用构造函数注入）IPersonAppService接口到一个类时，一个PersonAppService对象被创建并自动传入构造函数。
+* 命名约定：包含“PersonAppService”后缀的名称。
 * 
