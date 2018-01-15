@@ -45,3 +45,6 @@ Configuration.Authorization.Providers.Add<MyAuthorizationProvider>();
 ## 检查权限
 ### 使用AbpAuthorize特性
 AbpAuthorize（AbpMvcAuthorize为MVC控制器和 AbpApiAuthorize的Web API控制器）属性是检查权限的最简单，最常用的方法。
+```csharp?linenums
+
+```
