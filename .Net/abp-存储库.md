@@ -105,3 +105,7 @@ Task<TPrimaryKey> InsertOrUpdateAndGetIdAsync(TEntity entity);
 * InsertOrUpdate方法通过检查Id的值来插入或更新给定的实体。
 * InsertOrUpdateAndGetId返回实体的Id。
 #### 更新
+```csharp?linenums
+TEntity Update(TEntity entity);
+Task<TEntity> UpdateAsync(TEntity entity);
+```
