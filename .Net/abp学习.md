@@ -184,3 +184,29 @@ IocManager.Register<IMyService, MyService>(DependencyLifeStyle.Transient);
 ```csharp?linenums
 IocManager.IocContainer.Register(Classes.FromThisAssembly().BasedOn<IMySpecialInterface>().LifestylePerThread().WithServiceSelf());
 ```
+
+
+### 解析
+#### 构造函数和属性注入
+```csharp?linenums
+public class PersonAppService
+{
+    public ILogger Logger { get; set; }
+
+    private IPersonRepository _personRepository;
+
+    public PersonAppService(IPersonRepository personRepository)
+    {
+        _personRepository = personRepository;
+        Logger = NullLogger.Instance;
+    }
+
+    public void CreatePerson(string name, int age)
+    {
+        Logger.Debug("Inserting a new person to database with name = " + name);
+        var person = new Person { Name = name, Age = age };
+        _personRepository.Insert(person);
+        Logger.Debug("Successfully inserted!");
+    }
+}
+```
