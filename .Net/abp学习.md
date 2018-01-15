@@ -28,3 +28,7 @@ grammar_cjkRuby: true
 # 依赖注入
 ## 传统依赖注入问题
 假设有一个`application service`使用一个`repository`去插入一个`entities`到数据库。
+```csharp?linenums
+
+
+```
