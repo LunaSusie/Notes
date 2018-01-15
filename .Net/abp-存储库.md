@@ -123,4 +123,5 @@ Task DeleteAsync(Expression<Func<TEntity, bool>> predicate);
 * 第一个方法接受一个现有的实体。
 * 第二个方法接受实体的Id删除。
 * 最后一个接受一个条件来删除符合给定条件的所有实体。如果条件太多，可能会导致性能问题。
+#### 获取实体数量
 
