@@ -33,4 +33,5 @@ public class MyAuthorizationProvider : AuthorizationProvider
 * 权限属性：
 	* name:系统范围的唯一名称。
 	* display name:稍后在UI中可用于显示权限的可本地化的字符串。
-	* 
+	* 1
+	* MultiTenancySides
