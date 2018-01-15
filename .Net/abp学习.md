@@ -210,3 +210,4 @@ public class PersonAppService
     }
 }
 ```
+* IPersonRepository从构造函数注入，ILogger注入公共属性。
