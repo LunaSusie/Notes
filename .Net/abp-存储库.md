@@ -45,6 +45,7 @@ public interface IPersonRepository : IRepository<Person, long>
 仓库在NHibernate和 EntityFramework中是作为开箱即用的方式实现的。
 ### 基础知识库方法
 #### 查询
+#### 获取单一实体
 ```csharp?linenums
 TEntity Get(TPrimaryKey id);
 Task<TEntity> GetAsync(TPrimaryKey id);
