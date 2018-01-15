@@ -52,5 +52,5 @@ public void CreateUser(CreateUserInput input)
     //A user can not execute this method if he is not granted for "Administration.UserManagement.CreateUser" permission.
 }
 ```
-* CreateUser方法不能被授予“ Administration.UserManagement.CreateUser ” 权限的用户调用。
+* CreateUser方法只能被授予“ Administration.UserManagement.CreateUser ” 权限的用户调用。
 * AbpAuthorize属性还检查当前用户是否登录
