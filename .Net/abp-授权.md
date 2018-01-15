@@ -54,3 +54,6 @@ public void CreateUser(CreateUserInput input)
 ```
 * CreateUser方法只能被授予“ Administration.UserManagement.CreateUser ” 权限的用户调用。
 * AbpAuthorize属性还检查当前用户是否登录
+```csharp?linenums
+
+```
