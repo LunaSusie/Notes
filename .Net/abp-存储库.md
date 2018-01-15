@@ -83,6 +83,8 @@ IQueryable<TEntity> GetAll();
 还有一个额外的方法来提供可用于工作单元的IQueryable的功能。
 ```csharp?linenums
 T Query<T>(Func<IQueryable<TEntity>, T> queryMethod);
+
+var people = _personRepository.Query(q => q.Where(p => p.Name.Contains("H")).OrderBy(p => p.Name).ToList());
 ```
 *Query方法接受一个接收IQueryable <T>的lambda（或方法）并返回任何类型的对象。
 
