@@ -62,6 +62,7 @@ TEntity Load(TPrimaryKey id);
 ```
 * Get方法用于使用给定的主键（Id）获取实体。
 * Single方法采用表达式获取单一实体。
-* FirstOrDefault
+* FirstOrDefault通过主键或者表达式。
+* 
 #### 
 
