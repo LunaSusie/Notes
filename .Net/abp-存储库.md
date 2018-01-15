@@ -120,3 +120,5 @@ Task DeleteAsync(TPrimaryKey id);
 void Delete(Expression<Func<TEntity, bool>> predicate);
 Task DeleteAsync(Expression<Func<TEntity, bool>> predicate);
 ```
+* 第一个方法接受一个现有的实体。
+* 
