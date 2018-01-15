@@ -156,3 +156,4 @@ public class PersonAppService : IPersonAppService
 ```csharp?linenums
 IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
 ```
+* Assembly.GetExecutingAssembly（）获取包含此代码的程序集的引用。您可以将其他程序集传递给RegisterAssemblyByConvention方法。
