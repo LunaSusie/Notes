@@ -82,6 +82,6 @@ IQueryable<TEntity> GetAll();
 #### 自定义返回值
 还有一个额外的方法来提供可用于工作单元的IQueryable的功能。
 ```csharp?linenums
-
+T Query<T>(Func<IQueryable<TEntity>, T> queryMethod);
 ```
 
