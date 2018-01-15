@@ -151,7 +151,7 @@ public class PersonAppService : IPersonAppService
 }
 ```
 * ASP.NET Boilerplate自动注册它，因为它实现了 IApplicationService接口（它只是一个空的接口）。它被注册为瞬态（每个用户创建的实例）。当你注入（使用构造函数注入）IPersonAppService接口到一个类时，一个PersonAppService对象被创建并自动传入构造函数。
-* 命名约定：包含“PersonAppService”后缀的名称。
+* 命名约定：该例子中的约定是PersonAppService后缀
 * ASP.NET Boilerplate可以按照惯例注册程序集：
 ```csharp?linenums
 IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
