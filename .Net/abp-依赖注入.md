@@ -1,5 +1,5 @@
 ---
-title: abp-依赖注入
+title: abp-依赖注入笔记
 tags: 依赖注入
 grammar_cjkRuby: true
 ---
