@@ -13,3 +13,4 @@ grammar_cjkRuby: true
 如果没有实现，则使用NullPermissionChecker，将所有权限授予每个人。
 ## 定义权限
 为每个需要授权的操作定义一个唯一的权限。
+ASP.NET Boilerplate被设计为模块化的。所以，不同的模块可以有不同的权限。
