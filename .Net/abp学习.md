@@ -119,3 +119,4 @@ personService.CreatePerson("Yunus Emre", 19);
 * 假设Log4NetLogger使用Log4Net库实现ILogger并写入日志。
 * 因此，PersonAppService实际上可以写日志。如果我们不设置记录器，它不会写入日志。
 * ILogger是PersonAppService 的可选依赖。
+## 依赖注入框架：Castle Windsor 框架
