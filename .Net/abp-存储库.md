@@ -27,5 +27,8 @@ public class PersonAppService : IPersonAppService
     }
 }
 ```
+## 自定义存储库
+* 接口
 
+* 实现
 
