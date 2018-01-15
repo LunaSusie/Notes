@@ -29,3 +29,4 @@ public class MyAuthorizationProvider : AuthorizationProvider
     }
 }
 ```
+* IPermissionDefinitionContext有获取和创建权限的方法。
