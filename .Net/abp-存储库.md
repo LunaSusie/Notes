@@ -102,3 +102,4 @@ Task<TPrimaryKey> InsertOrUpdateAndGetIdAsync(TEntity entity);
 ```
 * Insert方法将新实体插入数据库并返回相同的插入实体。
 * InsertAndGetId方法返回新插入实体的Id。
+* InsertOrUpdate
