@@ -62,3 +62,4 @@ public void SomeMethod(SomeMethodInput input)
 }
 ```
 ### AbpAuthorize特性限制
+不能用于私人方法。
