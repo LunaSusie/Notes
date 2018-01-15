@@ -68,6 +68,7 @@ TEntity Load(TPrimaryKey id);
 ```csharp?linenums
 List<TEntity> GetAllList();
 Task<List<TEntity>> GetAllListAsync();
+
 List<TEntity> GetAllList(Expression<Func<TEntity, bool>> predicate);
 Task<List<TEntity>> GetAllListAsync(Expression<Func<TEntity, bool>> predicate);
 
