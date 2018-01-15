@@ -86,7 +86,5 @@ T Query<T>(Func<IQueryable<TEntity>, T> queryMethod);
 
 var people = _personRepository.Query(q => q.Where(p => p.Name.Contains("H")).OrderBy(p => p.Name).ToList());
 ```
-*Query方法接受一个接收IQueryable \<T\>的lambda（或方法）并返回任何类型的对象。
-
-
+* Query方法接受一个接收IQueryable \<T\>的lambda（或方法）并返回任何类型的对象。
 #### 插入
