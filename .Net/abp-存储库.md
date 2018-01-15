@@ -75,5 +75,6 @@ Task<List<TEntity>> GetAllListAsync(Expression<Func<TEntity, bool>> predicate);
 IQueryable<TEntity> GetAll();
 ```
 * GetAllList用于从数据库中检索所有实体。它的重载可以用来过滤实体。
+* GetAll返回IQueryable <T>。所以，你可以在它之后添加Linq方法。
 #### 
 
