@@ -73,3 +73,4 @@ public void SomeMethod(SomeMethodInput input)
 在MVC控制器（web层）中，我们使用 Abp.Web.Mvc.Authorization.AbpMvcAuthorize属性。
 在ASP.NET Web API中，我们使用 Abp.WebApi.Authorization.AbpApiAuthorize属性。
 在ASP.NET Core中，我们使用 Abp.AspNetCore.Mvc.Authorization.AbpMvcAuthorize属性。
+### 禁止授权
