@@ -91,3 +91,11 @@ public void CreateUser(CreateOrUpdateUserInput input)
 }
 ```
 如果您只是检查权限并抛出异常，您可以使用Authorize 方法：
+```csharp?linenums
+public void CreateUser(CreateOrUpdateUserInput input)
+{
+    PermissionChecker.Authorize("Administration.UserManagement.CreateUser");
+
+    //A user can not reach this point if he is not granted for "Administration.UserManagement.CreateUser" permission.
+}
+```
