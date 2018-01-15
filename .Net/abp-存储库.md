@@ -70,6 +70,7 @@ List<TEntity> GetAllList();
 Task<List<TEntity>> GetAllListAsync();
 List<TEntity> GetAllList(Expression<Func<TEntity, bool>> predicate);
 Task<List<TEntity>> GetAllListAsync(Expression<Func<TEntity, bool>> predicate);
+
 IQueryable<TEntity> GetAll();
 ```
 * GetAllList用于从数据库中检索所有实体。它的重载可以用来过滤实体。
