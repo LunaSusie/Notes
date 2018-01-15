@@ -100,4 +100,4 @@ Task<TEntity> InsertOrUpdateAsync(TEntity entity);
 TPrimaryKey InsertOrUpdateAndGetId(TEntity entity);
 Task<TPrimaryKey> InsertOrUpdateAndGetIdAsync(TEntity entity);
 ```
-* Insert
+* Insert方法
