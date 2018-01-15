@@ -242,3 +242,12 @@ public class MySampleClass : ITransientDependency
 * 它构造器注入IIcResolver并用它来解析和释放对象。
 * Resolve方法有一些重载可以根据需要使用。
 * 释放方法用于释放组件（对象）。如果手动解析对象，调用Release 是 非常重要的。否则，您的应用程序可能会有内存泄漏问题。为了确保释放对象，只要有可能，就使用ResolveAsDisposable（如上例所示）。它会在使用块的末尾自动调用Release。
+* IIocResolver（和IIocManager）也有CreateScope扩展方法（在Abp.Dependency命名空间中定义）来安全释放所有已解析的依赖关系。例:
+```csharp?linenums
+using (var scope = _iocResolver.CreateScope())
+{
+    var simpleObj1 = scope.Resolve<SimpleService1>();
+    var simpleObj2 = scope.Resolve<SimpleService2>();
+    //...
+}
+```
