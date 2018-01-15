@@ -110,4 +110,11 @@ TEntity Update(TEntity entity);
 Task<TEntity> UpdateAsync(TEntity entity);
 ```
 #### 删除
-
+```csharp?linenums
+void Delete(TEntity entity);
+Task DeleteAsync(TEntity entity);
+void Delete(TPrimaryKey id);
+Task DeleteAsync(TPrimaryKey id);
+void Delete(Expression<Func<TEntity, bool>> predicate);
+Task DeleteAsync(Expression<Func<TEntity, bool>> predicate);
+```
