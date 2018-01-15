@@ -76,5 +76,6 @@ IQueryable<TEntity> GetAll();
 ```
 * GetAllList用于从数据库中检索所有实体。它的重载可以用来过滤实体。
 * GetAll返回IQueryable <T>。所以，你可以在它之后添加Linq方法。
+* 通过使用GetAll，几乎所有的查询都可以用Linq编写。即使它可以在连接表达式中使用。
 #### 
 
