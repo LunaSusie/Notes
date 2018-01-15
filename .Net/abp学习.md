@@ -19,8 +19,8 @@ grammar_cjkRuby: true
 * Dynamic web api layer（动态webapi）：我们通常编写一个封装Web API控制器来向JavaScript客户端公开方法。ABP在运行时自动执行该操作。
 * Dynamic Javascript AJAX Proxy（动态javascriptAjax代理）：ABP创建JavaScript代理方法，这些方法调用应用程序服务方法就像调用客户端上的JavaScript方法一样简单。
 ## 其他功能
-* modularity（模块化）：
-* Data Filters（数据过滤）：
-* Multi Tenancy（多租户）：
-* Setting ManageMent（）：
-* Unit & Integration Testing
+* modularity（模块化）：为构建可重用模块提供了强大的基础架构。
+* Data Filters（数据过滤）：提供自动数据过滤来实现一些模式，如软删除和多租户。
+* Multi Tenancy（多租户）：它完全支持多租户，包括单租户架构中的单个数据库或数据库。
+* Setting ManageMent（设置管理）：提供强大的基础设施来获取/更改应用程序，租户和用户级别设置。
+* Unit & Integration Testing（单元和集成测试）：考虑到可测试性。还提供了基类来简化单元和集成测试。
