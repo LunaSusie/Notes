@@ -100,4 +100,4 @@ Task<TEntity> InsertOrUpdateAsync(TEntity entity);
 TPrimaryKey InsertOrUpdateAndGetId(TEntity entity);
 Task<TPrimaryKey> InsertOrUpdateAndGetIdAsync(TEntity entity);
 ```
-* Insert方法
+* Insert方法需将新实体插入数据库并返回相同的插入实体。
