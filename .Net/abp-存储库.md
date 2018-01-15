@@ -42,5 +42,6 @@ public interface IPersonRepository : IRepository<Person, long>
 * IPersonRepository扩展了IRepository \<TEntity\>。它用于定义具有主键类型int（Int32）的实体。
 * 如果您的实体的主键不是int，则可以如下所示扩展 IRepository \<TEntity，TPrimaryKey\>接口。
 ### 实现
-
+仓库在NHibernate和 EntityFramework中是作为开箱即用的方式实现的。
+### 基础知识库方法
 
