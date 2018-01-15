@@ -134,3 +134,4 @@ Task<long> LongCountAsync();
 long LongCount(Expression<Func<TEntity, bool>> predicate);
 Task<long> LongCountAsync(Expression<Func<TEntity, bool>> predicate);
 ```
+#### 关于异步方法
