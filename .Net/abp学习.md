@@ -136,7 +136,7 @@ personService.CreatePerson("Yunus Emre", 19);
 * 然后我们要求容器创建一个IPersonAppService。
 ## abp依赖注入基础结构
 ### 注册依赖关系
-#### 常规注册
+#### 常规注册类
 ASP.NET Boilerplate按照惯例自动注册所有的 存储库，域服务，应用程序服务，MVC控制器和Web API控制器。
 例如，您可能有一个IPersonAppService接口和一个实现它的PersonAppService类：
 ```csharp?linenums
