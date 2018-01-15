@@ -158,5 +158,6 @@ public class PersonAppService : AbpWpfDemoAppServiceBase, IPersonAppService
 ```
 * GetAllPeople方法是异步的，并使用具有await关键字的GetAllListAsync。
 * 异步可能不被所有的ORM框架支持。它由EntityFramework支持。如果不支持，异步存储库方法同步工作。另外，例如，InsertAsync与Insert in EntityFramework的工作方式相同，因为在工作单元完成之前，EF不会将新实体写入数据库（也称为DbContext.SaveChanges）。
+#### 管理数据库连接
 #### 存储库的生命周期
 所有存储库实例都是Transient。这意味着，它们是按照使用情况进行实例化的。
