@@ -27,7 +27,7 @@ grammar_cjkRuby: true
 
 # 依赖注入
 ## 传统依赖注入问题
-假设有一个`application service`使用一个`repository`去插入一个`entities`到数据库。
+假设有一个`application service`使用一个`repository`去插入一个`entities`到数据库：
 ```csharp?linenums
 public class PersonAppService
 {
@@ -44,4 +44,37 @@ public class PersonAppService
 }
 ```
 * 组件应该依赖接口而不是实现。PersonAppService中的CreatePerson方法依赖于IPersonRepository和PersonRepository的构造函数。
-* 
+使用工厂模式：
+```csharp?linenums
+public class PersonAppService
+{
+	private IPersonRepository _personRepository;
+	public PersonAppService()
+	{
+		_personRepository=PersonRepositoryFactory.Create();    
+	}
+	public void CreatePerson(string name ,int age)
+	{
+		var person=new Person{Name=name, Age=age};
+		_personRepository.Insert(person);
+	}
+}
+```
+* PersonRepositoryFactory是一个创建并返回一个IPersonRepository的静态类。这被称为服务定位器模式。
+* PersonAppService依赖于PersonRepositoryFactory。这是更可以接受的，但仍然有一个硬性依赖。
+构造函数注入：
+```csharp?linenums
+public class PersonAppService
+{
+	private IPersonRepository _personRepository;
+	public PersonAppService(IPersonRepository personRepository)
+	{
+		_personRepository=personRepository;   
+	}
+	public void CreatePerson(string name ,int age)
+	{
+		var person=new Person{Name=name, Age=age};
+		_personRepository.Insert(person);
+	}
+}
+```
