@@ -29,6 +29,19 @@ grammar_cjkRuby: true
 ## 传统依赖注入问题
 假设有一个`application service`使用一个`repository`去插入一个`entities`到数据库。
 ```csharp?linenums
-
-
+public class PersonAppService
+{
+	private IPersonRepository _personRepository;
+	public PersonAppService()
+	{
+		_personRepository=new PersonRepository();
+	}
+	public void CreatePerson(string name ,int age)
+	{
+		var person=new Person{Name=name, Age=age};
+		_personRepository.Insert(person);
+	}
+}
 ```
+* 组件应该依赖接口而不是实现。PersonAppService中的CreatePerson方法依赖于IPersonRepository和PersonRepository的构造函数。
+* 
