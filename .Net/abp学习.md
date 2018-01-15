@@ -62,7 +62,7 @@ public class PersonAppService
 ```
 * PersonRepositoryFactory是一个创建并返回一个IPersonRepository的静态类。这被称为服务定位器模式。
 * PersonAppService依赖于PersonRepositoryFactory。这是更可以接受的，但仍然有一个硬性依赖。
-构造函数注入：
+构造函数注入模式：
 ```csharp?linenums
 public class PersonAppService
 {
@@ -77,4 +77,42 @@ public class PersonAppService
 		_personRepository.Insert(person);
 	}
 }
+```
+* PersonAppService不知道哪些类实现了IPersonRepository以及如何创建它。谁需要使用PersonAppService，首先创建一个IPersonRepository并将其传递给PersonAppService的构造函数：
+```csharp?linenums
+var repository=new PresonRepository();
+var personService=new PersonAppService(repository);
+personService.CreatePerson(''Yuns emre",19);
+```
+* 依赖类可能有其他依赖关系（这里，PersonRepository可能有依赖关系）。
+* 构造器注入模式是提供类的依赖关系的完美方式。通过这种方式，您不能在不提供依赖关系的情况下创建类的实例。
+属性注入模式：
+```csharp?linenums
+public class PersonAppService
+{
+    public ILogger Logger { get; set; }
+
+    private IPersonRepository _personRepository;
+
+    public PersonAppService(IPersonRepository personRepository)
+    {
+        _personRepository = personRepository;
+        Logger = NullLogger.Instance;
+    }
+
+    public void CreatePerson(string name, int age)
+    {
+        Logger.Debug("Inserting a new person to database with name = " + name);
+        var person = new Person { Name = name, Age = age };
+        _personRepository.Insert(person);
+        Logger.Debug("Successfully inserted!");
+    }
+}
+```
+* NullLogger.Instance是实现ILogger的单例对象，但实际上什么都不做（不写日志，它用空方法体实现ILogger）。
+* 如果在创建PersonAppService对象之后设置Logger，PersonAppService可以写入日志：
+```csharp?linenums
+var personService = new PersonAppService(new PersonRepository());
+personService.Logger = new Log4NetLogger();
+personService.CreatePerson("Yunus Emre", 19);
 ```
