@@ -67,3 +67,4 @@ public void SomeMethod(SomeMethodInput input)
 不能用于非注入类的方法
 如果通过接口调用方法（如通过接口使用的应用程序服务），可以将其用于任何公共方法 。
 如果直接从类引用（如ASP.NET MVC或Web API控制器）中调用方法，该方法应该是虚拟的。
+如果受保护，方法应该是虚拟的。
