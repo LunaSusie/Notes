@@ -91,8 +91,10 @@ var people = _personRepository.Query(q => q.Where(p => p.Name.Contains("H")).Ord
 ```csharp?linenums
 TEntity Insert(TEntity entity);
 Task<TEntity> InsertAsync(TEntity entity);
+
 TPrimaryKey InsertAndGetId(TEntity entity);
 Task<TPrimaryKey> InsertAndGetIdAsync(TEntity entity);
+
 TEntity InsertOrUpdate(TEntity entity);
 Task<TEntity> InsertOrUpdateAsync(TEntity entity);
 TPrimaryKey InsertOrUpdateAndGetId(TEntity entity);
