@@ -156,3 +156,4 @@ public class PersonAppService : AbpWpfDemoAppServiceBase, IPersonAppService
     }
 }
 ```
+* GetAllPeople方法是异步的，并使用具有await关键字的GetAllListAsync。
